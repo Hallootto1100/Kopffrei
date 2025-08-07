@@ -99,7 +99,7 @@ main {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1400px; /* Increased max-width for larger screens */
     margin: 0 auto 4rem auto;
 }
 
@@ -120,7 +120,7 @@ section h2 {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    width: 45%;
+    width: 48%; /* Increased width for larger screens */
     text-align: center;
 }
 

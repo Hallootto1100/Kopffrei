@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #D65A20; /* RGB 214, 90, 32 */
+    --secondary-color: #B44614; /* Darker Orange */
+    --background-color: #fdf6f6;
+    --text-color: #333;
+    --header-height: 70px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-top: var(--header-height);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav .nav-brand {
+    font-size: 1.8rem; /* Larger size for 'Kopffrei' */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero {
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('images/masoud-mostafaei-C1tPtOon2SQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-color); /* Fallback background color */
+    color: white;
+}
+
+.hero-content {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Increased size for main title */
+    margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+.hero-content .hero-subheading {
+    font-size: 2.5rem; /* Size for 'Mental Coaching' */
+    margin-bottom: 1rem;
+}
+
+.hero-content .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+main {
+    padding: 4rem 2rem;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.service-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 45%;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card details {
+    margin-top: 1rem;
+}
+
+.service-card summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+#contact-form form {
+    max-width: 800px; /* Increased max-width for larger screens */
+    margin: 0 auto;
+    padding: 3rem; /* Increased padding */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 1rem; /* Increased padding for inputs */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem; /* Increased font size for inputs */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1.2rem; /* Increased padding for button */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size for button */
+
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-nav ul {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .service-container, .about-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopffrei Mental Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#home" class="nav-brand">Kopffrei</a>
+            <ul>
+                <li><a href="#services">Angebote</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#contact-form">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Kopffrei</h1>
+            <p class="hero-subheading">Mental Coaching</p>
+            <p class="subtitle">Finde Klarheit, stärke dein Selbstvertrauen und lebe befreiter.</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="services">
+            <h2>Meine Angebote</h2>
+            <div class="service-container">
+                <div class="service-card">
+                    <img src="images/Naehmaschine.jpg" alt="Nähmaschine für Achtsames Gestaltungs-Coaching">
+                    <h3>Achtsames Gestaltungs-Coaching</h3>
+                    <p>Lerne, Selbstvertrauen zu entwickeln und soziale Ängste zu überwinden, während du kreativ ein eigenes Meditationskissen gestaltest.</p>
+                    <details>
+                        <summary>Mehr erfahren</summary>
+                        <p><strong>Dieses Angebot ist für dich, wenn:</strong></p>
+                        <ul>
+                            <li>du Angst hast, dich in sozialen Situationen zu zeigen oder dich unwohl fühlst.</li>
+                            <li>du mehr Selbstvertrauen und Klarheit für dein Leben gewinnen möchtest.</li>
+                            <li>du Freude am Nähen hast.</li>
+                        </ul>
+                        <p><strong>Preis:</strong> Einzelsitzung (90 Min.) für 180 Fr. (inkl. Material, exkl. Stoff).</p>
+                    </details>
+                </div>
+                <div class="service-card">
+                    <img src="images/Sitzungszimmer.jpg" alt="Sitzungszimmer für Mental Health-Coaching">
+                    <h3>Mental Health-Coaching</h3>
+                    <p>Überwinde Selbstzweifel, kläre deine Identität und lebe mit weniger Druck und mehr Gelassenheit.</p>
+                     <details>
+                        <summary>Mehr erfahren</summary>
+                        <p><strong>Dieses Angebot ist für dich, wenn:</strong></p>
+                        <ul>
+                            <li>du dir selbst zu viel abverlangst und oft gestresst oder überfordert bist.</li>
+                            <li>du unsicher bist, wer du wirklich bist oder was du im Leben willst.</li>
+                            <li>du oft an dir zweifelst und das Gefühl hast, nicht genug zu sein.</li>
+                        </ul>
+                        <p><strong>Preis:</strong> Erst-Sitzung (90 Min.) für 150 Fr., jede weitere (60 Min.) für 130 Fr.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/Ladina_Kuoni.jpg" alt="Porträt von Ladina Kuoni">
+                </div>
+                <div class="about-text">
+                    <h2>Über Ladina Kuoni</h2>
+                    <p><strong>Dipl. Mental Health-Coach i.A.</strong></p>
+                    <p>Mein Ansatz ist es, das eigene Sein besser zu verstehen und somit das Selbstbewusstsein und die eigene Identität zu stärken. Mit meiner Erfahrung als Modedesignerin und meiner aktuellen Ausbildung zur Mental Health-Coach verbinde ich kreative Prozesse mit mentaler Achtsamkeit.</p>
+                    <p>Neben dem Coaching leite ich das Projekt "KUMMIT", das Frauen ermutigt, die Berg- und Abenteuerwelt neu für sich zu entdecken.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact-form">
+            <h2>Kontaktieren Sie mich</h2>
+            <form action="mailto:kopffrei@mail.ch" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </section>
+
+    <footer id="contact">
+        <h2>Kontakt</h2>
+        <p>Ladina Kuoni | Aeuliweg 8, 7220 Schiers</p>
+        <p><a href="mailto:kopffrei@mail.ch">kopffrei@mail.ch</a> | <a href="tel:0792697331">079 269 73 31</a></p>
+    </footer>
+
+</body>
+</html>
